@@ -43,3 +43,19 @@ git clone [https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo.gi
 Navigate to a topic folder to view solutions and explanations.
 
 Run the code locally using your preferred compiler or IDE.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0073-set-matrix-zeroes](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0073-set-matrix-zeroes/) | Medium |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0073-set-matrix-zeroes](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0073-set-matrix-zeroes/) | Medium |
+## Matrix
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0073-set-matrix-zeroes](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0073-set-matrix-zeroes/) | Medium |
+<!---LeetCode Topics End-->
