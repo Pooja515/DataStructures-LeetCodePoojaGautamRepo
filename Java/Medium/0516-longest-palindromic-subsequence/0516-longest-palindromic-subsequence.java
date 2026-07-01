@@ -1,28 +1,29 @@
 class Solution {
-    int[][] memo;
+    
     public int longestPalindromeSubseq(String s) {
         int n = s.length();
-        memo = new int[n][n];
-        for(int[] row : memo){
-            Arrays.fill(row , -1);
-        }
-      
+        int[][] dp = new int[n+1][n+1];
         String s1 = reverse(s , 0 , n-1);
         
-        return f(n-1,n-1,s,s1);
-    }
-    int f(int i, int j , String s , String s1){
-        if(i<0 || j<0) return 0;
+        for(int i =0 ;i<=n;i++){
+            for(int j =0;j<=n;j++){
+              // base case
+               if(i==0 || j==0) dp[i][j] = 0;
 
-        if(memo[i][j] != -1){
-            return memo[i][j];
+               
+               else{
+                     if(s.charAt(i-1) == s1.charAt(j-1)){
+                          dp[i][j] = 1 + dp[i-1][j-1];
+                        }
+                            
+                       
+                    else{
+                           dp[i][j] = 0 + Math.max(dp[i-1][j] , dp[i][j-1]);
+                        }
+                    } 
+            }
         }
-
-        // match 
-        if(s.charAt(i) == s1.charAt(j))
-               return memo[i][j] = 1+ f(i-1 , j-1 , s,s1);
-    // not match 
-    return memo[i][j] = 0 + Math.max(f(i-1 , j , s, s1) , f(i,j-1,s , s1));
+       return dp[n][n];
     }
 
      String reverse (String s , int l, int r){
