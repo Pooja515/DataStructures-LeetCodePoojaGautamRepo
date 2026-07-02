@@ -68,10 +68,12 @@ Run the code locally using your preferred compiler or IDE.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0516-longest-palindromic-subsequence](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0516-longest-palindromic-subsequence/) | Medium |
+| [0583-delete-operation-for-two-strings](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0583-delete-operation-for-two-strings/) | Medium |
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/1312-minimum-insertion-steps-to-make-a-string-palindrome/) | Hard |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0516-longest-palindromic-subsequence](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0516-longest-palindromic-subsequence/) | Medium |
+| [0583-delete-operation-for-two-strings](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0583-delete-operation-for-two-strings/) | Medium |
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/1312-minimum-insertion-steps-to-make-a-string-palindrome/) | Hard |
 <!---LeetCode Topics End-->
