@@ -3,7 +3,8 @@ class Solution {
     public int longestPalindromeSubseq(String s) {
         int n = s.length();
 
-        String s2 = reverse(s, 0 , n-1);
+        String s2 =  new StringBuilder(s).reverse().toString();
+
         
         int m = s2.length();
 
@@ -31,6 +32,7 @@ class Solution {
             }
       return dp[m];
     }
+    /** 
     String reverse(String s , int l , int r){
         char[] a = s.toCharArray();
         while(l<r){
@@ -42,4 +44,5 @@ class Solution {
        }
        return new String(a);
     }
+    */
 }
