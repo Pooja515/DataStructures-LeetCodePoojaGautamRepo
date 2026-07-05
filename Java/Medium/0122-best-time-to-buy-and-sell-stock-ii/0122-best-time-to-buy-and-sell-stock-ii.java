@@ -1,31 +1,18 @@
 class Solution {
-    int[][] memo ;
+  
     public int maxProfit(int[] prices) {
        int n = prices.length;
-       memo = new int[n][2];
-       for(int[] r:memo){
-        Arrays.fill(r , -1);
-       }
+        int[][] dp = new int[n+1][2];
+        dp[n][0] =0;
+        dp[n][1] =0;
+     
+        for(int ind = n-1 ;ind>=0 ;ind--){
+             dp[ind][0]= Math.max(prices[ind] + dp[ind + 1][1], 0 + dp[ind + 1][0]);
+                   
+            dp[ind][1]= Math.max(-prices[ind] + dp[ind + 1][0] ,0 + dp[ind + 1][1]);
+            
+        }
 
-       return f(0,1,prices,n); 
-    }
-    int f(int ind , int buy , int[] prices , int n){
-        if(ind == n) return 0;
-        if(memo[ind][buy] != -1) return memo[ind][buy];
-        //buy
-        if(buy == 1){
-            int take = -prices[ind] + f(ind + 1 , 0 , prices , n);
-            int nottake = 0 + f(ind + 1 , 1, prices , n);
-            int profit = Math.max(take , nottake);
-            return memo[ind][buy]=profit;
-        }
-        //sell
-        else{
-            int take = prices[ind] + f(ind + 1 , 1 , prices , n);
-            int nottake = 0 + f(ind + 1 , 0, prices , n);
-            int profit = Math.max(take , nottake);
-            return memo[ind][buy]= profit;
-        }
-        
+    return dp[0][1];
     }
 }
