@@ -1,38 +1,27 @@
 class Solution {
-    int[][][] memo;
     public int maxProfit(int[] prices) {
-
         int n = prices.length;
-        memo = new int[n][2][3];
-        for(int[][] mat : memo){
-            for(int[] r: mat){
-                  Arrays.fill(r , -1);
+// Size 4 for cap because cap can be 0, 1, 2, or 3
+int[][][] dp = new int[n + 1][2][4]; 
+
+for (int i = n - 1; i >= 0; i--) {
+    for (int buy = 0; buy < 2; buy++) {
+        // cap needs to go down to 1 because cap-1 is used below
+        for (int cap = 3; cap >= 1; cap--) { 
+            if (buy == 1) {
+                int take = -prices[i] + dp[i + 1][0][cap];
+                int nottake = 0 + dp[i + 1][1][cap];
+                dp[i][buy][cap] = Math.max(take, nottake);
+            } else {
+                int take = prices[i] + dp[i + 1][1][cap - 1]; // Fixed buy state to 1 after selling
+                int nottake = 0 + dp[i + 1][0][cap];
+                dp[i][buy][cap] = Math.max(take, nottake);
             }
         }
-        return f(0,1,2,prices,n);
     }
-    int f(int ind , int buy , int cap , int[] prices , int n){
-        
-        if(ind == n || cap == 0) return 0;
+}
 
-        int profit = 0;
-
-        if(memo[ind][buy][cap] != -1) return memo[ind][buy][cap];
-
-        if(buy == 1){
-
-           int take = -prices[ind] + f(ind+1 , 0 , cap,prices ,n);
-           int nottake = 0 + f(ind+1 , 1 ,cap , prices , n);
-           profit = Math.max(take , nottake);
-           memo[ind][buy][cap] = profit;
-
-        }
-        else{
-             int take = prices[ind] + f(ind+1 , 1 , cap - 1,prices ,n);
-             int nottake = 0 + f(ind+1 , 0 ,cap , prices , n);
-             profit = Math.max(take , nottake);
-             memo[ind][buy][cap] = profit;
-        }
-        return memo[ind][buy][cap];
+// The result will be stored here (starting at day 0, looking to buy, with 2 transactions left)
+return dp[0][1][2];
     }
 }
