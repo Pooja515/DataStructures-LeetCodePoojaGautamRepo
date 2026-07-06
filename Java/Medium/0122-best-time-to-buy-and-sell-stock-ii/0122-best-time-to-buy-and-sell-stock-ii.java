@@ -3,16 +3,17 @@ class Solution {
     public int maxProfit(int[] prices) {
         int n = prices.length;
 
-        int[][] dp = new int[n+1][2];
-       
-        for(int ind = n-1 ;ind >= 0 ; ind--){
-    
+        int[] dp = new int [2];
+
+        for (int ind = n - 1; ind >= 0; ind--) {
+             int[] cur = new int [2];
             // can sell
-            dp[ind][0] =Math.max(prices[ind] + dp[ind+1][1] , dp[ind+1][0]);
-             // can buy
-            dp[ind][1] =Math.max(-prices[ind] + dp[ind+1][0] , dp[ind+1][1]);
-    
+            cur[0] = Math.max(prices[ind] + dp[1], dp[0]);
+            // can buy
+            cur[1] = Math.max(-prices[ind] + dp[0], dp[1]);
+            
+            dp = cur;
         }
-       return dp[0][1];
+        return dp[1];
     }
 }
