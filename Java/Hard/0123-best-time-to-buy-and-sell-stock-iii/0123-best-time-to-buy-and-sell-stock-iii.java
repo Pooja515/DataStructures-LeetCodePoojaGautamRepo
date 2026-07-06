@@ -1,28 +1,13 @@
 class Solution {
-
     public int maxProfit(int[] prices) {
         int n = prices.length;
-
-        int[][][] dp = new int[n + 1][2][3];
-
-        for (int day = n - 1; day >= 0; day--) {
-
-            for (int transactionsLeft = 1; transactionsLeft <= 2; transactionsLeft++) {
-
-                // Not holding stock
-                dp[day][0][transactionsLeft] = Math.max(
-                        -prices[day] + dp[day + 1][1][transactionsLeft],
-                        dp[day + 1][0][transactionsLeft]
-                );
-
-                // Holding stock
-                dp[day][1][transactionsLeft] = Math.max(
-                        prices[day] + dp[day + 1][0][transactionsLeft - 1],
-                        dp[day + 1][1][transactionsLeft]
-                );
+        int[][][] dp = new int[n+1][2][3];
+        for(int ind= n-1 ; ind >= 0 ; ind--){
+            for(int trans = 1;trans <= 2 ; trans++ ){
+                dp[ind][0][trans] = Math.max(prices[ind] + dp[ind+1][1][trans-1] , dp[ind+1][0][trans]);
+                dp[ind][1][trans] = Math.max(-prices[ind] + dp[ind+1][0][trans] , dp[ind+1][1][trans]);
             }
         }
-
-        return dp[0][0][2];
+        return dp[0][1][2];
     }
 }
