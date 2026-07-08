@@ -57,6 +57,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0152-maximum-product-subarray](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0152-maximum-product-subarray/) | Medium |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0188-best-time-to-buy-and-sell-stock-iv/) | Hard |
 | [0200-number-of-islands](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0200-number-of-islands/) | Medium |
+| [0695-max-area-of-island](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0695-max-area-of-island/) | Medium |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -68,12 +69,14 @@ Run the code locally using your preferred compiler or IDE.
 | ------- | ------- |
 | [0073-set-matrix-zeroes](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0073-set-matrix-zeroes/) | Medium |
 | [0200-number-of-islands](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0200-number-of-islands/) | Medium |
+| [0695-max-area-of-island](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0695-max-area-of-island/) | Medium |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0128-longest-consecutive-sequence/) | Medium |
 | [0200-number-of-islands](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0547-number-of-provinces/) | Medium |
+| [0695-max-area-of-island](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0695-max-area-of-island/) | Medium |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -104,12 +107,14 @@ Run the code locally using your preferred compiler or IDE.
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0547-number-of-provinces/) | Medium |
+| [0695-max-area-of-island](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0695-max-area-of-island/) | Medium |
 | [0841-keys-and-rooms](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0841-keys-and-rooms/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0547-number-of-provinces/) | Medium |
+| [0695-max-area-of-island](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0695-max-area-of-island/) | Medium |
 | [0841-keys-and-rooms](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0841-keys-and-rooms/) | Medium |
 ## Graph Theory
 | Problem Name | Difficulty |
