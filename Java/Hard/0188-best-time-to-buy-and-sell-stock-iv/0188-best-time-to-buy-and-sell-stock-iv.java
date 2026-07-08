@@ -2,10 +2,10 @@ class Solution {
     public int maxProfit(int k, int[] prices) {
        int n = prices.length;
        int[][] dp = new int[2][k+1]; 
-       for(int i =n-1 ;i>= 0 ;i--){
-        for(int j= 1 ;j<=k;j++){
-            dp[0][j] = Math.max(prices[i] + dp[1][j-1] , 0+ dp[0][j]);
-            dp[1][j] = Math.max(-prices[i] + dp[0][j] , 0+dp[1][j]);
+       for(int ind = n-1 ;ind >= 0 ;ind--){
+        for(int trans = 1 ;trans <= k;trans++){
+            dp[0][trans] = Math.max(prices[ind] + dp[1][trans-1] , 0+ dp[0][trans]);
+            dp[1][trans] = Math.max(-prices[ind] + dp[0][trans] , 0+dp[1][trans]);
         }
        }
        return dp[1][k];
