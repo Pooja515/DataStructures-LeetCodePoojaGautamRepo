@@ -4,22 +4,21 @@ class Solution {
         int original = image[sr][sc];
         if(original == color) return image;
         int m= image.length , n = image[0].length;
-        Queue<int[]> q = new LinkedList<>();
-        image[sr][sc] = color;
-        q.offer(new int[] {sr,sc});
-       
-        while(!q.isEmpty()){
-            int[] cur = q.poll();
+        dfs(sr,sc,image,color,original);
+        return image;
+    }
+    void dfs(int sr, int sc , int[][] image , int color , int original){
+         int m= image.length , n = image[0].length;
+            image[sr][sc] = color;
+      
             for(int[] d : dir){
-                int newr = cur[0] + d[0];
-                int newc = cur[1] + d[1];
+                int newr = sr + d[0];
+                int newc = sc + d[1];
                 if(newr >= 0 && newr < m && newc >= 0 && newc < n && image[newr][newc] == original ){
                    
-                    image[newr][newc] = color;
-                    q.add(new int[] {newr,newc});
+                     dfs(newr,newc,image,color,original);
+                    
                 }
             }
         }
-        return image;
     }
-}
