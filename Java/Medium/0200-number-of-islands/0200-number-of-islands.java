@@ -8,7 +8,7 @@ class Solution {
             for(int j=0;j<n;j++){
                 if(grid[i][j] == '1' && !visited[i][j])
                 {
-                    dfs(i,j,grid,visited,m,n);
+                    bfs(i,j,grid,visited,m,n);
                     island++;
                 }
                 else
@@ -18,14 +18,28 @@ class Solution {
         }
         return island;
     }
-    void dfs(int i , int j ,char[][] grid , boolean[][] visited , int m , int n){
-         visited[i][j] = true;
-        for(int[] d : dir){
-            int newr = i+d[0] , newc = j+d[1];
-            if(newr >= 0 && newr < m && newc >=0 && newc < n && grid[newr][newc] == '1' && !visited[newr][newc]){
-              
-                dfs(newr,newc,grid,visited,m,n);
-
+    private void bfs(int r, int c, char[][] grid, boolean[][] visited, int m, int n) {
+        Queue<int[]> queue = new ArrayDeque<>();
+        queue.offer(new int[]{r, c});
+        visited[r][c] = true; // Mark as visited as soon as it enters the queue
+        
+        while (!queue.isEmpty()) {
+            int[] curr = queue.poll();
+            int currRow = curr[0];
+            int currCol = curr[1];
+            
+            // Check all 4 neighboring directions
+            for (int[] d : dir) {
+                int newRow = currRow + d[0];
+                int newCol = currCol + d[1];
+                
+                // Ensure boundaries, check if it's land, and make sure it's not visited
+                if (newRow >= 0 && newRow < m && newCol >= 0 && newCol < n 
+                    && grid[newRow][newCol] == '1' && !visited[newRow][newCol]) {
+                    
+                    visited[newRow][newCol] = true; // Mark immediately to avoid duplicate queue entries
+                    queue.offer(new int[]{newRow, newCol});
+                    }
             } 
         }
     }
