@@ -5,17 +5,16 @@ class Solution {
         if(original == color) return image;
         int m= image.length , n = image[0].length;
         Queue<int[]> q = new LinkedList<>();
-        boolean[][] visited = new boolean[m][n];
         image[sr][sc] = color;
         q.offer(new int[] {sr,sc});
-        visited[sr][sc] =true;
+       
         while(!q.isEmpty()){
             int[] cur = q.poll();
             for(int[] d : dir){
                 int newr = cur[0] + d[0];
                 int newc = cur[1] + d[1];
-                if(newr >= 0 && newr < m && newc >= 0 && newc < n && image[newr][newc] == original && !visited[newr][newc]){
-                    visited[newr][newc] = true;
+                if(newr >= 0 && newr < m && newc >= 0 && newc < n && image[newr][newc] == original ){
+                   
                     image[newr][newc] = color;
                     q.add(new int[] {newr,newc});
                 }
