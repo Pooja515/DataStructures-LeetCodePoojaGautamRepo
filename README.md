@@ -119,6 +119,7 @@ Run the code locally using your preferred compiler or IDE.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0200-number-of-islands/) | Medium |
+| [0207-course-schedule](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0207-course-schedule/) | Medium |
 | [0547-number-of-provinces](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0547-number-of-provinces/) | Medium |
 | [0695-max-area-of-island](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0695-max-area-of-island/) | Medium |
 | [0733-flood-fill](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0733-flood-fill/) | Easy |
@@ -127,6 +128,7 @@ Run the code locally using your preferred compiler or IDE.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0200-number-of-islands/) | Medium |
+| [0207-course-schedule](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0207-course-schedule/) | Medium |
 | [0542-01-matrix](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0542-01-matrix/) | Medium |
 | [0547-number-of-provinces](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0547-number-of-provinces/) | Medium |
 | [0695-max-area-of-island](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0695-max-area-of-island/) | Medium |
@@ -137,6 +139,7 @@ Run the code locally using your preferred compiler or IDE.
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0207-course-schedule](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0207-course-schedule/) | Medium |
 | [0547-number-of-provinces](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0547-number-of-provinces/) | Medium |
 | [0841-keys-and-rooms](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0841-keys-and-rooms/) | Medium |
 ## Math
@@ -153,4 +156,8 @@ Run the code locally using your preferred compiler or IDE.
 | ------- | ------- |
 | [0070-climbing-stairs](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0070-climbing-stairs/) | Easy |
 | [0509-fibonacci-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0509-fibonacci-number/) | Easy |
+## Topological Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0207-course-schedule](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0207-course-schedule/) | Medium |
 <!---LeetCode Topics End-->
