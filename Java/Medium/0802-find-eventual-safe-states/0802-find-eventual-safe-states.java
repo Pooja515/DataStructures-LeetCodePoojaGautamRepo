@@ -1,22 +1,21 @@
 class Solution {
     public List<Integer> eventualSafeNodes(int[][] graph) {
         int n = graph.length;
-        List<List<Integer>> reverseAdj = new ArrayList<>();
+        List<List<Integer>> adj = new ArrayList<>();
         int[] outDegree = new int[n];
 
         for (int i = 0; i < n; i++) {
-            reverseAdj.add(new ArrayList<>());
+            adj.add(new ArrayList<>());
         }
 
-        // Build reverse graph + track outdegree of original graph
+        //Nested loop + build REVERSE graph
         for (int u = 0; u < n; u++) {
             for (int v : graph[u]) {
-                reverseAdj.get(v).add(u); // reverse edge: v -> u
+                adj.get(v).add(u);     // reverse edge: v -> u
             }
-            outDegree[u] = graph[u].length;
+            outDegree[u] = graph[u].length;  // outdegree from ORIGINAL graph
         }
 
-        // Start with terminal nodes (outDegree == 0)
         Queue<Integer> queue = new LinkedList<>();
         boolean[] safe = new boolean[n];
 
@@ -26,24 +25,21 @@ class Solution {
             }
         }
 
-        // Kahn's algorithm (propagate safety backward)
         while (!queue.isEmpty()) {
             int node = queue.poll();
             safe[node] = true;
 
-            for (int pred : reverseAdj.get(node)) {
-                outDegree[pred]--;
-                if (outDegree[pred] == 0) {
-                    queue.offer(pred);
+            for (int neighbour : adj.get(node)) {  // predecessors now
+                outDegree[neighbour]--;
+                if (outDegree[neighbour] == 0) {
+                    queue.offer(neighbour);
                 }
             }
         }
 
-        // Collect all safe nodes
         List<Integer> result = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            if (safe[i])
-                result.add(i);
+            if (safe[i]) result.add(i);
         }
 
         return result;
