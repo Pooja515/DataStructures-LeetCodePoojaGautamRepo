@@ -7,11 +7,9 @@ class Solution {
         int[] dp = new int[n];
 
         for (int i = 0; i < m; i++) {
-            int[] cur = new int[n];
-
             for (int j = 0; j < n; j++) {
                 if (i == 0 && j == 0) {
-                    cur[j] = 1;
+                    dp[j] = 1;
                     continue;
                 }
 
@@ -19,10 +17,10 @@ class Solution {
                 if (i > 0)
                     up = dp[j];
                 if (j > 0)
-                    left = cur[j - 1];
-                cur[j] = left + up;
+                    left = dp[j - 1];
+                dp[j] = left + up;
             }
-            dp = cur;
+       
         }
         return dp[n - 1];
     }
