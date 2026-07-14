@@ -96,6 +96,7 @@ Run the code locally using your preferred compiler or IDE.
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0062-unique-paths](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0062-unique-paths/) | Medium |
 | [0070-climbing-stairs](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0070-climbing-stairs/) | Easy |
 | [0115-distinct-subsequences](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0115-distinct-subsequences/) | Hard |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0121-best-time-to-buy-and-sell-stock/) | Easy |
@@ -151,6 +152,7 @@ Run the code locally using your preferred compiler or IDE.
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0062-unique-paths](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0062-unique-paths/) | Medium |
 | [0070-climbing-stairs](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0070-climbing-stairs/) | Easy |
 | [0509-fibonacci-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0509-fibonacci-number/) | Easy |
 ## Recursion
@@ -168,4 +170,8 @@ Run the code locally using your preferred compiler or IDE.
 | [0207-course-schedule](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0210-course-schedule-ii/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0802-find-eventual-safe-states/) | Medium |
+## Combinatorics
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0062-unique-paths](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0062-unique-paths/) | Medium |
 <!---LeetCode Topics End-->
