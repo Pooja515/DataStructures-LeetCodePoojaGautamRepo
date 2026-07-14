@@ -18,10 +18,8 @@ class Solution {
                 int left = 0, up = 0;
                 if (i > 0)
                     up = dp[j];
-
                 if (j > 0)
                     left = cur[j - 1];
-
                 cur[j] = left + up;
             }
             dp = cur;
