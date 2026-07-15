@@ -9,10 +9,9 @@ class Solution {
         if (obstacleGrid[0][0] == 1 || obstacleGrid[m - 1][n - 1] == 1)
             return 0;
 
-        int[] dp = new int[n];
+       int[] cur = new int[n];
 
         for (int i = 0; i < m; i++) {
-               int[] cur = new int[n];
             for (int j = 0; j < n; j++) {
                 if (i == 0 && j == 0) {
                       cur[j] =1;
@@ -26,13 +25,12 @@ class Solution {
                 
 
                 int up = 0 , left = 0;
-                if(i>0) up =   dp[j];
+                if(i>0) up =   cur[j];
                 if(j>0) left = cur[j - 1];
 
                 cur[j] = up + left;
             }
-            dp = cur;
         }
-       return dp[n-1];
+       return cur[n-1];
     }
 }
