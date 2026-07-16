@@ -11,8 +11,8 @@ class Solution {
             freq[t.charAt(i) - 'a']--;
         }
 
-        for (int count : freq) {
-            if (count != 0) {
+        for (int num : freq) {
+            if (num != 0) {
                 return false;
             }
         }
