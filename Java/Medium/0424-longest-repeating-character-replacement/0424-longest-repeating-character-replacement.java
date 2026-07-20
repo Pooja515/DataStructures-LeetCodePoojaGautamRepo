@@ -5,7 +5,7 @@ class Solution {
         for(int r=0 ; r<s.length() ; r++){
             map.put(s.charAt(r) , map.getOrDefault(s.charAt(r),0)+1);
             maxfreq = Math.max(maxfreq , map.get(s.charAt(r)));
-            if((r-l+1) - maxfreq >k){
+            while((r-l+1) - maxfreq >k){
                 map.put(s.charAt(l) , map.get(s.charAt(l))-1);
                 if(s.charAt(l) == 0) map.remove(s.charAt(l));
                 l++;
