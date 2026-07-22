@@ -13,23 +13,21 @@ class Solution {
         memo = new Boolean[n][target + 1];
 
        
-        return f(0 , nums, target);
+        return f(n-1 , nums, target);
     }
 
     boolean f(int i , int[] nums, int target){
         if(target == 0) return true;
-        if(i == nums.length)
+        if(i < 0)
            return false;
           if (memo[i][target] != null) {
             return memo[i][target];
         }
-        boolean nottake = f(i+1 , nums , target);
+        boolean nottake = f(i-1 , nums , target);
         boolean take = false;
         if(nums[i] <= target){
-            take = f(i+1 , nums , target - nums[i]);
+            take = f(i-1 , nums , target - nums[i]);
         }
          return memo[i][target] =  nottake || take;
     }
 }
-
-
