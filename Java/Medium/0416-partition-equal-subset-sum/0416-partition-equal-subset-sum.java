@@ -16,18 +16,17 @@ class Solution {
         return f(n-1 , nums, target);
     }
 
-    boolean f(int i , int[] nums, int target){
-        if(target == 0) return true;
-        if(i < 0)
-           return false;
-          if (memo[i][target] != null) {
-            return memo[i][target];
-        }
-        boolean nottake = f(i-1 , nums , target);
-        boolean take = false;
-        if(nums[i] <= target){
-            take = f(i-1 , nums , target - nums[i]);
-        }
-         return memo[i][target] =  nottake || take;
+    boolean f(int ind , int[] nums, int target){
+       if(target == 0) return true;
+       if(ind < 0) return false;
+       if(memo[ind][target] != null) return memo[ind][target];
+       boolean notpick = f(ind-1,nums , target);
+       boolean pick = false ;
+       if(nums[ind] <= target){
+         pick = f(ind-1 , nums , target - nums[ind]);
+       }
+
+       return memo[ind][target] = pick || notpick;
+
     }
 }
