@@ -1,5 +1,5 @@
 class Solution {
-    Boolean[][] memo;
+    
     public boolean canPartition(int[] nums) {
         int totalsum = 0;
         for(int num : nums){
@@ -10,23 +10,27 @@ class Solution {
 
         int target = totalsum / 2 ;
         int n = nums.length;
-        memo = new Boolean[n][target + 1];
 
-       
-        return f(n-1 , nums, target);
-    }
+        boolean[][] dp = new boolean [n][target + 1];
 
-    boolean f(int ind , int[] nums, int target){
-       if(target == 0) return true;
-       if(ind < 0) return false;
-       if(memo[ind][target] != null) return memo[ind][target];
-       boolean notpick = f(ind-1,nums , target);
-       boolean pick = false ;
-       if(nums[ind] <= target){
-         pick = f(ind-1 , nums , target - nums[ind]);
+          for(int ind = 0 ;ind < n; ind++){
+            dp[ind][0] = true;
+          }
+
+       for(int ind = 1 ;ind < n; ind++){
+        for(int t = 1 ;t <= target ; t++){
+            
+            boolean notpick = dp[ind-1][t];
+            boolean pick = false ;
+            if(nums[ind] <= t){
+                pick = dp[ind-1][t - nums[ind]];
+            }
+             dp[ind][t] = pick || notpick;
+        }
+      
+    
        }
-
-       return memo[ind][target] = pick || notpick;
-
+    
+    return dp[n-1][target];
     }
 }
