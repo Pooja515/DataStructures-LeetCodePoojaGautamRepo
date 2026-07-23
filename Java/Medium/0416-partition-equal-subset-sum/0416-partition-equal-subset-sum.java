@@ -1,36 +1,32 @@
 class Solution {
-    
+    Boolean[][] memo ;
     public boolean canPartition(int[] nums) {
-        int totalsum = 0;
-        for(int num : nums){
-            totalsum += num;
-        }
-
-        if(totalsum % 2 != 0) return false;
-
-        int target = totalsum / 2 ;
-        int n = nums.length;
-
-        boolean[][] dp = new boolean [n][target + 1];
-
-          for(int ind = 0 ;ind < n; ind++){
-            dp[ind][0] = true;
-          }
-
-       for(int ind = 1 ;ind < n; ind++){
-        for(int t = 1 ;t <= target ; t++){
-            
-            boolean notpick = dp[ind-1][t];
-            boolean pick = false ;
-            if(nums[ind] <= t){
-                pick = dp[ind-1][t - nums[ind]];
-            }
-             dp[ind][t] = pick || notpick;
-        }
-      
-    
-       }
-    
-    return dp[n-1][target];
+      int n = nums.length;
+      int totalsum = 0;
+      for(int i = 0 ; i < n ;i++){
+        totalsum += nums[i];
+      }
+      if(totalsum % 2 != 0) return false; 
+      int target = totalsum/2; 
+      memo = new Boolean[n][target+1];
+      return f(n-1,target , nums);
     }
+
+    boolean f(int ind , int target , int[] nums){
+        if(target == 0) return true;
+        if(ind == 0){
+          
+                return nums[0] == target;
+            
+        }
+        if(memo[ind][target] != null) return memo[ind][target];
+        boolean notpick = f(ind-1 , target , nums);
+        boolean pick = false;
+        if(nums[ind] <= target){
+            pick = f(ind-1 , target - nums[ind] , nums);
+        }
+
+        return memo[ind][target] = pick || notpick;
+    }
+
 }
