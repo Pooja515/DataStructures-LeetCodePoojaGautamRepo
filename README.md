@@ -64,6 +64,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0217-contains-duplicate](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0217-contains-duplicate/) | Easy |
 | [0238-product-of-array-except-self](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0238-product-of-array-except-self/) | Medium |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium |
+| [0322-coin-change](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0322-coin-change/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0416-partition-equal-subset-sum/) | Medium |
 | [0542-01-matrix](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0542-01-matrix/) | Medium |
 | [0695-max-area-of-island](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0695-max-area-of-island/) | Medium |
@@ -131,6 +132,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0152-maximum-product-subarray](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0152-maximum-product-subarray/) | Medium |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0188-best-time-to-buy-and-sell-stock-iv/) | Hard |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium |
+| [0322-coin-change](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0322-coin-change/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0416-partition-equal-subset-sum/) | Medium |
 | [0509-fibonacci-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0509-fibonacci-number/) | Easy |
 | [0516-longest-palindromic-subsequence](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0516-longest-palindromic-subsequence/) | Medium |
@@ -164,6 +166,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0200-number-of-islands](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0200-number-of-islands/) | Medium |
 | [0207-course-schedule](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0210-course-schedule-ii/) | Medium |
+| [0322-coin-change](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0322-coin-change/) | Medium |
 | [0542-01-matrix](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0542-01-matrix/) | Medium |
 | [0547-number-of-provinces](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0547-number-of-provinces/) | Medium |
 | [0695-max-area-of-island](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0695-max-area-of-island/) | Medium |
