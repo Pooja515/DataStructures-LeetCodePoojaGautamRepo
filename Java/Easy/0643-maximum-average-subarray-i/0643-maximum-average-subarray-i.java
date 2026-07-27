@@ -5,12 +5,11 @@ class Solution {
        for(int r=0;r<nums.length;r++){
         sum +=nums[r];
         if(r-l+1 == k){
-            double avg = sum/k;
-            maxi = Math.max(maxi , avg);
+            maxi = Math.max(maxi , sum);
             sum -= nums[l];
             l++;
         }
        } 
-       return maxi;
+       return maxi/k;
     }
 }
