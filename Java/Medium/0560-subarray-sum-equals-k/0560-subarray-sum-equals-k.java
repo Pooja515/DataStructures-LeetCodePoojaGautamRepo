@@ -3,17 +3,19 @@ class Solution {
         Map<Integer, Integer> map = new HashMap<>();
         map.put(0, 1);
 
-        int sum = 0 ,count = 0;
+        int rightsum = 0 ,count = 0;
+
+        // rightsum - leftsum = k
 
         for (int num : nums) {
 
-            sum += num;
+            rightsum += num;
 
-            int leftsum = sum - k;
+            int leftsum = rightsum - k;
 
             count += map.getOrDefault(leftsum, 0);
 
-            map.put(sum,map.getOrDefault(sum, 0) + 1);
+            map.put(rightsum,map.getOrDefault(rightsum, 0) + 1);
         }
       return count;
     }
