@@ -1,7 +1,9 @@
 class Solution {
     public int networkDelayTime(int[][] times, int n, int k) {
+
         List<List<int[]>> adj = new ArrayList<>();
-        for(int i =0 ;i <=n;i++){
+
+        for(int i = 0; i<=n ; i++){
             adj.add(new ArrayList<>());
         }
 
@@ -13,39 +15,44 @@ class Solution {
             adj.get(u).add(new int[] {v,wt});
 
         }
+
         int[] distance = new int[n+1];
-        Arrays.fill(distance,(int) 1e9);
+        Arrays.fill(distance , (int) 1e9);
         distance[k] =0;
 
-        PriorityQueue<int[]> pq= new PriorityQueue<>((a,b)->Integer.compare(a[0],b[0]));
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b)->Integer.compare(a[0],b[0]));
 
+       //pair {distance ,src}
         pq.offer(new int[] {0,k});
 
         while(!pq.isEmpty()){
             int[] curr = pq.poll();
-            int currDistance  = curr[0];
+            int currdistance = curr[0];
             int node = curr[1];
+            
+            if(currdistance > distance[node]) continue;
 
-            if(currDistance > distance[node]) continue;
 
             for(int[] neighbors : adj.get(node)){
                 int neighbor = neighbors[0];
                 int w = neighbors[1];
 
-                int newDistance = currDistance + w;
-
-                if(newDistance < distance[neighbor]){
-                    distance[neighbor] = newDistance;
-                    pq.offer(new int[] {newDistance , neighbor});
+                int newdistance = currdistance + w;
+                if(newdistance < distance[neighbor]){
+                    distance[neighbor] = newdistance;
+                    pq.offer(new int[] {newdistance , neighbor});
                 }
-            } 
-        }
-        int maxi =0;
-        for(int i =1 ;i <=n ;i++){
-          if(distance[i] == (int) 1e9) return -1;
-          maxi= Math.max(maxi,distance[i]);
+            }
         }
 
+        int maxi=0;
+        for(int i=1;i<=n;i++){
+            if(distance[i] == (int) 1e9 ){
+                return -1;
+            }
+            maxi = Math.max(maxi,distance[i]);
+        }
         return maxi;
+
     }
 }
