@@ -1,15 +1,15 @@
 class Solution {
-    int[][] memo;
+  
     public int change(int amount, int[] coins) {
         int n = coins.length;
-        memo = new int[n][amount+1];
+        int[][] memo = new int[n][amount+1];
         for(int[] rows : memo){
             Arrays.fill(rows , -1);
         }
 
-        return f(n-1,amount,coins);
+        return f(n-1,amount,coins,memo);
     }
-    int f(int ind , int amount, int[] coins){
+    int f(int ind , int amount, int[] coins , int[][] memo){
         if(amount == 0) return 1;
         
         if(ind == 0){
@@ -23,10 +23,10 @@ class Solution {
         }
         if(memo[ind][amount] != -1) return memo[ind][amount];
 
-        int notpick = f(ind-1, amount , coins);
+        int notpick = f(ind-1, amount , coins , memo);
         int pick = 0;
         if(coins[ind] <= amount){
-            pick = f(ind,amount - coins[ind] ,coins);
+            pick = f(ind,amount - coins[ind] ,coins,memo);
         }
 
         return memo[ind][amount] = pick + notpick;
