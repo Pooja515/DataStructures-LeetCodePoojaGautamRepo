@@ -12,7 +12,8 @@ class Solution {
         int n = nums.length;
 
         boolean[][] dp = new boolean [n][target + 1];
-
+        
+          //// Target 0 can always be formed by selecting nothing.
           for(int ind = 0 ;ind < n; ind++){
             dp[ind][0] = true;
           }
