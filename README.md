@@ -76,6 +76,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0733-flood-fill](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0733-flood-fill/) | Easy |
 | [0904-fruit-into-baskets](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0904-fruit-into-baskets/) | Medium |
 | [0994-rotting-oranges](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0994-rotting-oranges/) | Medium |
+| [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1283-find-the-smallest-divisor-given-a-threshold/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1631-path-with-minimum-effort/) | Medium |
 | [1765-map-of-highest-peak](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1765-map-of-highest-peak/) | Medium |
 ## Hash Table
@@ -246,6 +247,7 @@ Run the code locally using your preferred compiler or IDE.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0209-minimum-size-subarray-sum/) | Medium |
+| [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1283-find-the-smallest-divisor-given-a-threshold/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1631-path-with-minimum-effort/) | Medium |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
