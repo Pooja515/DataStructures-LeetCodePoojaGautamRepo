@@ -1,46 +1,32 @@
 class Solution {
-    int[][] dir = {{-1,0}, {1,0},{0,-1} ,{0,1}};
     public int numIslands(char[][] grid) {
-        int m = grid.length , n= grid[0].length;
-        boolean[][] visited = new boolean [m][n];
-        int island = 0;
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                if(grid[i][j] == '1' && !visited[i][j])
-                {
-                    bfs(i,j,grid,visited,m,n);
+        if (grid == null || grid.length == 0)
+            return 0;
+        int m = grid.length, n = grid[0].length, island = 0;
+        boolean[][] visited = new boolean[m][n];
+        for (int r = 0; r < m; r++) {
+            for (int c = 0; c < n; c++) {
+                if (grid[r][c] == '1' && !visited[r][c]) {
+                    dfs(r, c, grid, visited);
                     island++;
+
                 }
-                else
-                      continue;
-               
             }
         }
         return island;
     }
-    private void bfs(int r, int c, char[][] grid, boolean[][] visited, int m, int n) {
-        Queue<int[]> queue = new ArrayDeque<>();
-        queue.offer(new int[]{r, c});
-        visited[r][c] = true; // Mark as visited as soon as it enters the queue
-        
-        while (!queue.isEmpty()) {
-            int[] curr = queue.poll();
-            int currRow = curr[0];
-            int currCol = curr[1];
-            
-            // Check all 4 neighboring directions
-            for (int[] d : dir) {
-                int newRow = currRow + d[0];
-                int newCol = currCol + d[1];
-                
-                // Ensure boundaries, check if it's land, and make sure it's not visited
-                if (newRow >= 0 && newRow < m && newCol >= 0 && newCol < n 
-                    && grid[newRow][newCol] == '1' && !visited[newRow][newCol]) {
-                    
-                    visited[newRow][newCol] = true; // Mark immediately to avoid duplicate queue entries
-                    queue.offer(new int[]{newRow, newCol});
-                    }
-            } 
+
+    int[][] dir = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
+
+    void dfs(int r, int c, char[][] grid, boolean[][] visited) {
+        visited[r][c] = true;
+        for (int[] d : dir) { // explore neighbors
+            int newr = r + d[0], newc = c + d[1];
+            if (newr >= 0 && newr < grid.length && newc >= 0 && newc < grid[0].length && grid[newr][newc] == '1'
+                    && !visited[newr][newc]) {
+                dfs(newr, newc, grid, visited);
+            }
         }
+
     }
 }
