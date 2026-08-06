@@ -66,6 +66,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0238-product-of-array-except-self](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0238-product-of-array-except-self/) | Medium |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium |
 | [0322-coin-change](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0322-coin-change/) | Medium |
+| [0410-split-array-largest-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0410-split-array-largest-sum/) | Hard |
 | [0416-partition-equal-subset-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0416-partition-equal-subset-sum/) | Medium |
 | [0518-coin-change-ii](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0518-coin-change-ii/) | Medium |
 | [0542-01-matrix](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0542-01-matrix/) | Medium |
@@ -149,6 +150,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0188-best-time-to-buy-and-sell-stock-iv/) | Hard |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium |
 | [0322-coin-change](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0322-coin-change/) | Medium |
+| [0410-split-array-largest-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0410-split-array-largest-sum/) | Hard |
 | [0416-partition-equal-subset-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0416-partition-equal-subset-sum/) | Medium |
 | [0509-fibonacci-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0509-fibonacci-number/) | Easy |
 | [0516-longest-palindromic-subsequence](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0516-longest-palindromic-subsequence/) | Medium |
@@ -163,6 +165,7 @@ Run the code locally using your preferred compiler or IDE.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
+| [0410-split-array-largest-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0410-split-array-largest-sum/) | Hard |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
@@ -249,6 +252,7 @@ Run the code locally using your preferred compiler or IDE.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0209-minimum-size-subarray-sum/) | Medium |
+| [0410-split-array-largest-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0410-split-array-largest-sum/) | Hard |
 | [0875-koko-eating-bananas](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0875-koko-eating-bananas/) | Medium |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1283-find-the-smallest-divisor-given-a-threshold/) | Medium |
@@ -269,6 +273,7 @@ Run the code locally using your preferred compiler or IDE.
 | ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0209-minimum-size-subarray-sum/) | Medium |
 | [0238-product-of-array-except-self](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0238-product-of-array-except-self/) | Medium |
+| [0410-split-array-largest-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0410-split-array-largest-sum/) | Hard |
 | [0560-subarray-sum-equals-k](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0560-subarray-sum-equals-k/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
