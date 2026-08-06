@@ -77,6 +77,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0875-koko-eating-bananas](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0875-koko-eating-bananas/) | Medium |
 | [0904-fruit-into-baskets](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0904-fruit-into-baskets/) | Medium |
 | [0994-rotting-oranges](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0994-rotting-oranges/) | Medium |
+| [1011-capacity-to-ship-packages-within-d-days](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1283-find-the-smallest-divisor-given-a-threshold/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1631-path-with-minimum-effort/) | Medium |
 | [1765-map-of-highest-peak](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1765-map-of-highest-peak/) | Medium |
@@ -249,6 +250,7 @@ Run the code locally using your preferred compiler or IDE.
 | ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0209-minimum-size-subarray-sum/) | Medium |
 | [0875-koko-eating-bananas](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0875-koko-eating-bananas/) | Medium |
+| [1011-capacity-to-ship-packages-within-d-days](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1283-find-the-smallest-divisor-given-a-threshold/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1631-path-with-minimum-effort/) | Medium |
 ## Heap (Priority Queue)
