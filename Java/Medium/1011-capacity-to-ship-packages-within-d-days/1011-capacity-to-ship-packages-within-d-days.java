@@ -28,7 +28,8 @@ class Solution {
                 sum=weights[i];
                 cnt++;
             }
-        }
-        return cnt<=days;
+            if(cnt > days) return false;
+        } 
+        return true;
     }
 }
