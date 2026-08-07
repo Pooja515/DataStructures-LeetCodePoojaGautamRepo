@@ -1,24 +1,32 @@
 class Solution {
-    int[][] dir = {{-1,0},{1,0} , {0,1} , {0,-1}};
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
-        int original = image[sr][sc];
-        if(original == color) return image;
-        int m= image.length , n = image[0].length;
-        dfs(sr,sc,image,color,original);
+        if(image == null) return null;
+
+        int m = image.length , n = image[0].length;
+
+        int newcolor = image[sr][sc];
+
+        if(newcolor == color ) return image ;
+
+        //newcolor = color;
+            
+        dfs(sr,sc,image,color,newcolor);
+
         return image;
     }
-    void dfs(int sr, int sc , int[][] image , int color , int original){
-         int m= image.length , n = image[0].length;
-            image[sr][sc] = color;
-      
-            for(int[] d : dir){
-                int newr = sr + d[0];
-                int newc = sc + d[1];
-                if(newr >= 0 && newr < m && newc >= 0 && newc < n && image[newr][newc] == original ){
-                   
-                     dfs(newr,newc,image,color,original);
-                    
-                }
+
+    int[][] dir = {{-1,0},{1,0},{0,-1},{0,1}};
+
+    void dfs(int sr,int sc ,int[][] image,int color, int newcolor){
+        image[sr][sc] = color;
+        
+        for(int[] d:dir){
+            int newr = sr + d[0] , newc = sc + d[1];
+            if(newr >= 0 && newr < image.length && newc >= 0 && newc < image[0].length && image[newr][newc] == newcolor){
+                //image[newr][newc] = color;
+                dfs(newr,newc,image,color,newcolor);
             }
         }
+
     }
+}
