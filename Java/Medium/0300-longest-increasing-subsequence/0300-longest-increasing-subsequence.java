@@ -19,14 +19,16 @@ class Solution {
                 return memo[ind][prev_ind+1];
 
         // not take 
-        int len= 0 + f(ind+1, prev_ind,nums);
+    
+        int nottake= 0 + f(ind+1, prev_ind,nums);
 
         //take 
+        int take=0;
         if(prev_ind == -1 || nums[ind] > nums[prev_ind]){
-            int take = 1 + f(ind+1,ind,nums);
-            len = Math.max(len , take);
+            take = 1 + f(ind+1,ind,nums);
+            
         }
 
-       return memo[ind][prev_ind+1] = len;
+       return memo[ind][prev_ind+1] = Math.max(take,nottake);
     }
 }
