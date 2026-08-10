@@ -1,44 +1,45 @@
 class Solution {
-    public int orangesRotting(int[][] grid) {
-        if(grid== null || grid.length ==0) return 0;
+   int[][] dir = { { -1, 0 }, { 1, 0 }, { 0, 1 }, { 0, -1 } };
 
-        int m = grid.length, n = grid[0].length;
-    
-        Queue<int[]> q = new LinkedList<>();
-        int fresh = 0;
 
-        for (int r = 0; r < m; r++) {
-            for (int c = 0; c < n; c++) {
-                if (grid[r][c] == 2 ) {
-                    q.offer(new int[] { r, c });
-                } else {
-                    if (grid[r][c] == 1)
-                        fresh++;
-                }
-            }
-        }
-        if(fresh == 0) return 0;
-        int[][] dir = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
-        int minute =0;
-        while (!q.isEmpty() && fresh > 0) {
-             int size = q.size();
-             minute ++;
-            for (int i = 0; i < size; i++) {
-                int[] curr = q.poll();
-                for (int[] d : dir) {
-                    int newr = curr[0] + d[0], newc = curr[1] + d[1];
-                    if (newr >= 0 && newr < m && newc >= 0 && newc < n && grid[newr][newc] == 1) {
-                        grid[newr][newc] = 2;
-                        q.offer(new int[] { newr, newc });
-                        fresh--;
-                    }
-                }
+   public int orangesRotting(int[][] grid) {
+       if (grid == null || grid[0].length == 0)
+           return 0;
+       int m = grid.length, n = grid[0].length;
+       int fresh = 0;
+       Queue<int[]> q = new ArrayDeque<>();
+       for (int r = 0; r < m; r++) {
+           for (int c = 0; c < n; c++) {
+               if (grid[r][c] == 2) {
+                   q.offer(new int[] { r, c });
+               } else {
+                   if (grid[r][c] == 1)
+                       fresh++;
+               }
+           }
+       }
+       if(fresh == 0) return 0;
+       int minutes = 0;
+       while (!q.isEmpty() && fresh > 0) {
+           int len = q.size();
+           for (int i = 0; i < len; i++) {
+               int[] cur = q.poll();
 
-            }
 
-        }
+               for (int[] d : dir) {
+                   int newr = cur[0] + d[0];
+                   int newc = cur[1] + d[1];
+                   if (newr >= 0 && newr < m && newc >= 0 && newc < n && grid[newr][newc] == 1) {
+                       fresh--;
 
-        return (fresh == 0 ? minute : -1);
 
-    }
+                       grid[newr][newc] = 2;
+                       q.offer(new int[] { newr, newc });
+                   }
+               }
+           }
+           minutes++;
+       }
+       return fresh == 0 ? minutes : -1;
+   }
 }
