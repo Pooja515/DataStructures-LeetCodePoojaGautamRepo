@@ -5,15 +5,17 @@ class Solution {
         int[] dp = new int[n];
         if(n==1) return nums[0];
 
-        dp[0] = nums[0];
-        dp[1] = Math.max(nums[0], nums[1]);
+        int prev2 = nums[0];
+        int  prev1 = Math.max(nums[0], nums[1]);
 
         for (int i = 2; i < n; i++) {
             // notake 
-            int nottake = 0 + dp[i - 1];
-            int take = nums[i] + dp[i - 2];
-            dp[i] = Math.max(take, nottake);
+            int nottake = 0 + prev1;
+            int take = nums[i] + prev2;
+            int curr = Math.max(take, nottake);
+            prev2 = prev1;
+            prev1 = curr;
         }
-      return dp[n-1];
+      return prev1;
     }
 }
