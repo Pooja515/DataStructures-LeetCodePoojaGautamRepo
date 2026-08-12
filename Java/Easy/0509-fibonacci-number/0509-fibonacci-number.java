@@ -11,6 +11,6 @@ class Solution {
 
         if(memo[n] != -1) return memo[n];
 
-        return f(n-1 , memo) + f(n-2,memo);
+        return memo[n] = f(n-1 , memo) + f(n-2,memo);
     }
 }
