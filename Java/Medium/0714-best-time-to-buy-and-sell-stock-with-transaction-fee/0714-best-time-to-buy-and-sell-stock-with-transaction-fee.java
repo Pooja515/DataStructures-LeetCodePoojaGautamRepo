@@ -1,25 +1,30 @@
 class Solution {
     int[][] memo;
     public int maxProfit(int[] prices, int fee) {
-         int n = prices.length;
+        int n = prices.length;
         memo = new int[n][2];
-        for(int[] row : memo){
-            Arrays.fill(row , -1);
+        for(int[] rows : memo){
+            Arrays.fill(rows,-1);
         }
-        return f(0,1,prices,fee,n);
+
+        return f(0,1,fee,prices);
     }
-    int f(int ind , int buy , int[] prices , int fee , int n){
-        if(ind >= n) return 0;
-        if(memo[ind][buy] != -1) return memo[ind][buy];
+
+    int f(int i , int buy , int fee,int[] prices){
+        if( i == prices.length) return 0;
+
+        if(memo[i][buy] != -1) return memo[i][buy];
+
         if(buy == 1){
-            int buyToday = -prices[ind] + f(ind+1 , 0,prices , fee , n);
-            int skipBuy = 0 + f(ind+1 , 1, prices ,fee , n);
-            return memo[ind][buy] = Math.max(buyToday , skipBuy);
+            int buytoday = -prices[i] + f(i+1,0,fee,prices);
+            int skipbuy = 0 + f(i+1,1,fee,prices);
+
+            return memo[i][buy] = Math.max(buytoday, skipbuy);
         }
         else{
-            int sellToday = prices[ind] + f(ind+1 , 1,prices ,fee , n) - fee ;
-            int holdSell = 0 + f(ind+1 , 0, prices ,fee ,  n);
-            return memo[ind][buy] = Math.max( sellToday, holdSell);
+            int selltoday = prices[i] + f(i+1,1,fee,prices) - fee;
+            int skipsell = 0 + f(i+1,0,fee,prices);
+            return memo[i][buy]=Math.max(selltoday,skipsell);
         }
     }
 }
