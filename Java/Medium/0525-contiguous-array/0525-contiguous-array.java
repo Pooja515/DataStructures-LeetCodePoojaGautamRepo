@@ -5,12 +5,7 @@ class Solution {
         int sum=0 , maxlen=0;
 
         for(int i=0;i<nums.length;i++){
-            if(nums[i]==0){
-                int num = -1;
-                sum += num;
-            }
-            else
-                 sum += nums[i];
+            sum += (nums[i] == 0) ? -1:1;
             
             if(map.containsKey(sum)){
                 maxlen = Math.max(maxlen ,i - map.get(sum));
