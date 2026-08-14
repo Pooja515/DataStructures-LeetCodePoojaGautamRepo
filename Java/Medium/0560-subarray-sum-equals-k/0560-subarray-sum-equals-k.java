@@ -1,22 +1,18 @@
 class Solution {
     public int subarraySum(int[] nums, int k) {
-        Map<Integer, Integer> map = new HashMap<>();
-        map.put(0, 1); 
+        HashMap<Integer,Integer> map = new HashMap<>();
+        map.put(0,1);
 
-        int rightsum = 0 ,count = 0;
+        int rightsum =0 , cnt=0;
 
-        // rightsum - leftsum = k
+        for(int i=0;i<nums.length;i++){
+            rightsum += nums[i];
+            if(map.containsKey(rightsum - k)){
+                cnt += map.get(rightsum - k);
+            }
 
-        for (int num : nums) {
-
-            rightsum += num;
-
-            int leftsum = rightsum - k;
-
-            count += map.getOrDefault(leftsum, 0);
-
-            map.put(rightsum,map.getOrDefault(rightsum, 0) + 1);
+            map.put(rightsum,map.getOrDefault(rightsum,0)+1);
         }
-      return count;
+        return cnt;
     }
 }
