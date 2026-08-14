@@ -398,4 +398,12 @@ Run the code locally using your preferred compiler or IDE.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0042-trapping-rain-water](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0042-trapping-rain-water/) | Hard |
+## Knapsack Problem
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0518-coin-change-ii](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0518-coin-change-ii/) | Medium |
+## Complete Knapsack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0518-coin-change-ii](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0518-coin-change-ii/) | Medium |
 <!---LeetCode Topics End-->
