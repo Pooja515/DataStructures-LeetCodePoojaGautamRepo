@@ -50,6 +50,7 @@ Run the code locally using your preferred compiler or IDE.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0001-two-sum/) | Easy |
+| [0011-container-with-most-water](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0011-container-with-most-water/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0027-remove-element](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0027-remove-element/) | Easy |
 | [0035-search-insert-position](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0035-search-insert-position/) | Easy |
@@ -196,6 +197,7 @@ Run the code locally using your preferred compiler or IDE.
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0011-container-with-most-water](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0011-container-with-most-water/) | Medium |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0410-split-array-largest-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0410-split-array-largest-sum/) | Hard |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
@@ -339,6 +341,7 @@ Run the code locally using your preferred compiler or IDE.
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0011-container-with-most-water](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0011-container-with-most-water/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0027-remove-element](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0027-remove-element/) | Easy |
 | [0042-trapping-rain-water](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0042-trapping-rain-water/) | Hard |
