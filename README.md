@@ -97,6 +97,7 @@ Run the code locally using your preferred compiler or IDE.
 | [1631-path-with-minimum-effort](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1631-path-with-minimum-effort/) | Medium |
 | [1765-map-of-highest-peak](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1765-map-of-highest-peak/) | Medium |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
+| [3069-distribute-elements-into-two-arrays-i](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/3069-distribute-elements-into-two-arrays-i/) | Easy |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/3471-find-the-largest-almost-missing-integer/) | Easy |
 | [3731-find-missing-elements](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/3731-find-missing-elements/) | Easy |
 ## Hash Table
@@ -431,4 +432,8 @@ Run the code locally using your preferred compiler or IDE.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1386-cinema-seat-allocation](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1386-cinema-seat-allocation/) | Medium |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3069-distribute-elements-into-two-arrays-i](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/3069-distribute-elements-into-two-arrays-i/) | Easy |
 <!---LeetCode Topics End-->
