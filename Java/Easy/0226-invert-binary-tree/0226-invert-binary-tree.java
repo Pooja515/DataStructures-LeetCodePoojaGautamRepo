@@ -21,12 +21,8 @@ class Solution {
             root.left = root.right;
             root.right = temp;
         
-        if(root.left != null){
-            TreeNode left= invertTree(root.left);
-        }
-        if(root.right != null){
-           TreeNode right = invertTree(root.right);
-        }
+         invertTree(root.left);
+         invertTree(root.right);
         
 
         return root;
