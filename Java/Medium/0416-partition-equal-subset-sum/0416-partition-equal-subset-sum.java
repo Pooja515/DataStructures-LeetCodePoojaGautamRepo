@@ -18,11 +18,12 @@ class Solution {
             dp[i][0] = true;
         }
 
-        if(n==1){
-            if(nums[0] <= target) return dp[0][nums[0]];
-            else
-                  dp[0][target] = false;
-        }
+       
+            if(nums[0] <= target) {
+                dp[0][nums[0]] = true;
+            }
+           
+    
     
     for(int i=1;i<n;i++){
         for(int t=0;t<= target;t++){
