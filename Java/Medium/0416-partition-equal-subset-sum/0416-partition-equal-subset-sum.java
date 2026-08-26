@@ -1,5 +1,5 @@
 class Solution {
-    Boolean[][] memo ;
+
     public boolean canPartition(int[] nums) {
 
         int n = nums.length, totalsum = 0;
@@ -12,30 +12,30 @@ class Solution {
 
         int target = totalsum / 2;
 
-         memo = new Boolean [n][target+1];
+        boolean [][] dp = new boolean [n][target+1];
 
-
-        return f(n - 1, target, nums);
-    }
-
-    boolean f(int i, int target, int[] nums) {
-        if (target == 0){
-             return true;
+        for(int i =0;i<n;i++){
+            dp[i][0] = true;
         }
-        if(i == 0){
-            if(nums[i] <= target ) return target == nums[i];
+
+        if(n==1){
+            if(nums[0] <= target) return dp[0][nums[0]];
             else
-                 return false;
+                  dp[0][target] = false;
         }
     
-    if(memo[i][target] != null) return memo[i][target];
-    boolean nottake = f(i - 1, target, nums);
-    boolean take = false;
-    if(nums[i] <= target){
-        take = f(i - 1, target - nums[i], nums);
+    for(int i=1;i<n;i++){
+        for(int t=0;t<= target;t++){
+              boolean nottake = dp[i - 1][t];
+              boolean take = false;
+              if(nums[i] <= t){
+                 take = dp[i - 1][t - nums[i]];
+                }
+
+               dp[i][t] = take||nottake;
+        }
     }
-
-    return memo[i][target] = take||nottake;
-
-}
+  
+     return dp[n-1][target];
+    }
 }
