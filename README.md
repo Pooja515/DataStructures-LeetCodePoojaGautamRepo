@@ -57,6 +57,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0035-search-insert-position](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0035-search-insert-position/) | Easy |
 | [0042-trapping-rain-water](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0042-trapping-rain-water/) | Hard |
+| [0048-rotate-image](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0048-rotate-image/) | Medium |
 | [0049-group-anagrams](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0049-group-anagrams/) | Medium |
 | [0053-maximum-subarray](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0053-maximum-subarray/) | Medium |
 | [0063-unique-paths-ii](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0063-unique-paths-ii/) | Medium |
@@ -131,6 +132,7 @@ Run the code locally using your preferred compiler or IDE.
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0048-rotate-image](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0048-rotate-image/) | Medium |
 | [0063-unique-paths-ii](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0063-unique-paths-ii/) | Medium |
 | [0064-minimum-path-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0064-minimum-path-sum/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0073-set-matrix-zeroes/) | Medium |
@@ -278,6 +280,7 @@ Run the code locally using your preferred compiler or IDE.
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0048-rotate-image](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0048-rotate-image/) | Medium |
 | [0062-unique-paths](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0062-unique-paths/) | Medium |
 | [0070-climbing-stairs](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0070-climbing-stairs/) | Easy |
 | [0509-fibonacci-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0509-fibonacci-number/) | Easy |
