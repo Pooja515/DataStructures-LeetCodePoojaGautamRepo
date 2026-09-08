@@ -76,6 +76,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0209-minimum-size-subarray-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0209-minimum-size-subarray-sum/) | Medium |
 | [0217-contains-duplicate](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0217-contains-duplicate/) | Easy |
 | [0238-product-of-array-except-self](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0238-product-of-array-except-self/) | Medium |
+| [0268-missing-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0268-missing-number/) | Easy |
 | [0283-move-zeroes](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0283-move-zeroes/) | Easy |
 | [0300-longest-increasing-subsequence](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0300-longest-increasing-subsequence/) | Medium |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium |
@@ -121,6 +122,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0128-longest-consecutive-sequence](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0128-longest-consecutive-sequence/) | Medium |
 | [0217-contains-duplicate](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0217-contains-duplicate/) | Easy |
 | [0242-valid-anagram](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0242-valid-anagram/) | Easy |
+| [0268-missing-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0268-missing-number/) | Easy |
 | [0424-longest-repeating-character-replacement](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0424-longest-repeating-character-replacement/) | Medium |
 | [0525-contiguous-array](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0525-contiguous-array/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0560-subarray-sum-equals-k/) | Medium |
@@ -283,6 +285,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0048-rotate-image](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0048-rotate-image/) | Medium |
 | [0062-unique-paths](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0062-unique-paths/) | Medium |
 | [0070-climbing-stairs](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0070-climbing-stairs/) | Easy |
+| [0268-missing-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0268-missing-number/) | Easy |
 | [0509-fibonacci-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0509-fibonacci-number/) | Easy |
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/3116-kth-smallest-amount-with-single-denomination-combination/) | Hard |
 | [3622-check-divisibility-by-digit-sum-and-product](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/3622-check-divisibility-by-digit-sum-and-product/) | Easy |
@@ -315,6 +318,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0088-merge-sorted-array](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0088-merge-sorted-array/) | Easy |
 | [0217-contains-duplicate](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0217-contains-duplicate/) | Easy |
 | [0242-valid-anagram](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0242-valid-anagram/) | Easy |
+| [0268-missing-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0268-missing-number/) | Easy |
 | [1547-minimum-cost-to-cut-a-stick](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/1547-minimum-cost-to-cut-a-stick/) | Hard |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
 | [3731-find-missing-elements](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/3731-find-missing-elements/) | Easy |
@@ -324,6 +328,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0035-search-insert-position](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0035-search-insert-position/) | Easy |
 | [0209-minimum-size-subarray-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0209-minimum-size-subarray-sum/) | Medium |
+| [0268-missing-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0268-missing-number/) | Easy |
 | [0300-longest-increasing-subsequence](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0300-longest-increasing-subsequence/) | Medium |
 | [0410-split-array-largest-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0410-split-array-largest-sum/) | Hard |
 | [0875-koko-eating-bananas](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0875-koko-eating-bananas/) | Medium |
@@ -458,6 +463,7 @@ Run the code locally using your preferred compiler or IDE.
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0268-missing-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0268-missing-number/) | Easy |
 | [1386-cinema-seat-allocation](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/1386-cinema-seat-allocation/) | Medium |
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/3116-kth-smallest-amount-with-single-denomination-combination/) | Hard |
 ## Simulation
