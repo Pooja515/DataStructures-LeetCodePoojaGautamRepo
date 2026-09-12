@@ -13,17 +13,15 @@ class Solution {
         return dfs(source, destination, adj, visited);
     }
 
-    boolean dfs(int node, int destination, List<List<Integer>> adj, boolean[] visited) {
-
-        if (node == destination)
+    boolean dfs(int source, int destination, List<List<Integer>> adj, boolean[] visited) {
+        if (source == destination)
             return true;
-        visited[node] = true;
-        for (int neig : adj.get(node)) {
-            if (!visited[neig]) {
-                if (dfs(neig, destination, adj, visited))
+        visited[source] = true;
+        for (int neigh : adj.get(source)) {
+            if (!visited[neigh]) {
+                if (dfs(neigh, destination, adj, visited))
                     return true;
             }
-
         }
         return false;
     }
