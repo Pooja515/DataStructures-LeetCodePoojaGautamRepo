@@ -4,7 +4,7 @@ class Solution {
 
          dfs(0,rooms,visited);
          for(boolean num : visited){
-            if(num != true ) return false;
+            if(!num) return false;
          }
          return true;
     }
