@@ -1,49 +1,48 @@
 class Solution {
-    int[][] dir = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
-
     public void solve(char[][] board) {
-
         int m = board.length, n = board[0].length;
-
-        for (int i = 0; i < m; i++) {
-            if (board[i][0] == 'O') {
-                isValid(i, 0, board);
+        for (int r = 0; r < m; r++) {
+            if (board[r][0] == 'O') {
+                dfs(r, 0, board, m, n);
             }
-            if (board[i][n - 1] == 'O') {
-                isValid(i, n-1, board);
-            }
-        }
-        for (int i = 0; i < n; i++) {
-            if (board[0][i] == 'O') {
-                isValid(0, i, board);
-            }
-            if (board[m-1][i] == 'O') {
-                isValid(m-1, i, board);
+            if (board[r][n - 1] == 'O') {
+                dfs(r, n - 1, board, m, n);
             }
         }
+        // column
+        for (int c = 0; c < n; c++) {
+            if (board[0][c] == 'O') {
+                dfs(0, c, board, m, n);
+            }
+            if (board[m - 1][c] == 'O') {
+                dfs(m - 1, c, board, m, n);
+            }
+        }
 
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (board[i][j] == 'O') {
-                    board[i][j] = 'X';
-                } 
-                else{
-                    if(board[i][j] == 'S'){
-                        board[i][j] = 'O';
-                    }
+        for(int r=0;r<m;r++){
+            for(int c=0;c<n;c++){
+                if(board[r][c] == 'O'){
+                    board[r][c] = 'X';
                 }
+                else{
+                    if(board[r][c] == 'S'){
+                    board[r][c] = 'O';
+                }
+                }
+                
             }
         }
+
     }
-
-    void isValid(int r, int c, char[][] board) {
-        board[r][c] = 'S';
-        for (int[] d : dir) {
-            int newr = r + d[0], newc = c + d[1];
-            if (newr >= 0 && newr < board.length && newc >= 0 && newc < board[0].length && board[newr][newc] == 'O') {
-                isValid(newr, newc, board);
+    int[][] dir = {{-1,0},{1,0},{0,-1},{0,1}};
+    void dfs(int r,int c , char[][] board , int m , int n ){
+        board[r][c] ='S';
+        for(int[] d:dir){
+            int newr = r+d[0] , newc = c+d[1];
+            if(newr >= 0 && newr < m && newc >= 0 && newc < n && board[newr][newc] == 'O'){
+                dfs(newr,newc,board,m,n);
             }
-
         }
+
     }
 }
