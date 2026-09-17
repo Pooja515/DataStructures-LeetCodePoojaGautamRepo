@@ -507,4 +507,8 @@ Run the code locally using your preferred compiler or IDE.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0215-kth-largest-element-in-an-array/) | Medium |
+## Dijkstra's Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0743-network-delay-time](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0743-network-delay-time/) | Medium |
 <!---LeetCode Topics End-->
