@@ -1,21 +1,27 @@
 class Solution {
-
+    int[] memo ;
     public int rob(int[] nums) {
         int n = nums.length;
-        int[] dp = new int[n];
-        if(n==1) return nums[0];
 
-        int prev2 = nums[0];
-        int  prev1 = Math.max(nums[0], nums[1]);
+        memo = new int[n];
 
-        for (int i = 2; i < n; i++) {
-            // notake 
-            int nottake = 0 + prev1;
-            int take = nums[i] + prev2;
-            int curr = Math.max(take, nottake);
-            prev2 = prev1;
-            prev1 = curr;
-        }
-      return prev1;
+        Arrays.fill(memo,-1);
+
+       // if(n==1) return nums[0];
+       // if(n==2) return Math.max(nums[0],nums[1]);
+
+        return f(n-1,nums);
+    }
+
+    int f(int i,int[] nums){
+        if(i==0) return nums[0];
+        if(i==1) return Math.max(nums[0],nums[1]);
+
+        if(memo[i] != -1) return memo[i];
+
+        int take = nums[i] + f(i-2,nums);
+        int nottake = 0 + f(i-1,nums);
+
+        return memo[i] = Math.max(take , nottake);
     }
 }
