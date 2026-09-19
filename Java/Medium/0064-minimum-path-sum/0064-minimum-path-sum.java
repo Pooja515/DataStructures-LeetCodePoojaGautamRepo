@@ -6,7 +6,7 @@ class Solution {
             return 0;
         int m = grid.length, n = grid[0].length;
 
-        int[][] dp = new int[m + 1][n + 1];
+        int[][] dp = new int[m ][n ];
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
