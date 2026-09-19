@@ -1,23 +1,30 @@
 class Solution {
-    int[][] memo;
+
     public int uniquePaths(int m, int n) {
-        
-        if(m== 0 || n==0) return 0;
-        memo = new int[m][n];
-        for(int[] rows:memo){
-            Arrays.fill(rows,-1);
+
+        if (m == 0 || n == 0)
+            return 0;
+        int[][] dp = new int[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i < 0 || j < 0){
+                    dp[i][j]= 0;
+                    continue;
+                }
+                   
+                if (i == 0 || j == 0){
+                    dp[i][j]= 1;
+                    continue;
+                }
+                   
+                int up =0 ,left=0;
+                if(i>0) up= dp[i - 1][j];
+                if(j>0) left = dp[i][j - 1];
+
+                dp[i][j] = up + left;
+            }
         }
-        return f(m-1,n-1);
-    }
-    int f(int i , int j){
-        if(i<0 || j<0) return 0;
-        if(i==0 || j==0) return 1;
+        return dp[m-1][n-1];
 
-        if(memo[i][j] != -1) return memo[i][j];
-
-        int up = f(i-1,j);
-        int left = f(i,j-1);
-
-        return memo[i][j] = up+left;
     }
 }
