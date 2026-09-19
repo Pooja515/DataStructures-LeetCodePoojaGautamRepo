@@ -6,18 +6,19 @@ class Solution {
         if (n < 2)
             return Math.min(cost[0], cost[1]);
 
-        int[] dp = new int[n ];
-        dp[0] = cost[0];
-        dp[1] = cost[1] ;
+      
+        int prev2 = cost[0];
+        int prev1 = cost[1] ;
 
         for (int i = 2; i < n; i++) {
-            int jump1 =  dp[i - 1];
-            int jump2 = dp[i - 2];
+          
 
-            dp[i] =cost[i]+ Math.min(jump1, jump2);
+            int cur =cost[i]+ Math.min(prev1, prev2);
+            prev2 = prev1;
+            prev1 = cur;
 
         }
-        return Math.min(dp[n-1],dp[n-2]);
+        return Math.min(prev2,prev1);
 
     }
 
