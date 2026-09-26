@@ -1,28 +1,33 @@
 class Solution {
-    int[][] memo;
     public int change(int amount, int[] coins) {
         int n= coins.length;
+        int[][] dp = new int[n][amount+1];
 
-        memo = new int[n][amount+1];
-        for(int[] rows:memo){
-            Arrays.fill(rows,-1);
+        for(int i=0;i<n;i++){
+            dp[i][0] =1;
+            }
+        for(int t=0;t <= amount;t++){
+            if(t % coins[0] == 0){
+                dp[0][t] =1;
+            }
+            else{
+                dp[0][t] =0;
+            }
         }
+      
+       for(int i=1;i<n;i++){
+        for(int t=1;t<=amount;t++){
 
-        return f(n-1,amount,coins);
-    }
+              int nottake = dp[i-1][t];
+              int take = 0;
+              if(coins[i] <= t){
+                  take = dp[i][t-coins[i]];
+              }
 
-    int f(int i,int target,int[] coins){
-        if(target == 0) return 1;
-        if(i<0) return 0;
-
-        if(memo[i][target] != -1) return memo[i][target];
-
-        int nottake = f(i-1,target,coins);
-        int take = 0;
-        if(coins[i] <= target){
-            take = f(i,target-coins[i],coins);
+              dp[i][t] = take + nottake;
         }
+       }
 
-        return memo[i][target] = take + nottake;
+      return dp[n-1][amount];
     }
 }
