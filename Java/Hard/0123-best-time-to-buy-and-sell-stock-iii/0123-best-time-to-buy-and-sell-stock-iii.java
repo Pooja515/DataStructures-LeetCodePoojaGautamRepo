@@ -1,32 +1,22 @@
 class Solution {
-    int[][][] memo;
+   
     public int maxProfit(int[] prices) {
         int n = prices.length;
-        memo = new int[n][2][3];
-        for(int[][] rows:memo){
-            for(int[] r:rows){
-                Arrays.fill(r,-1);
-            }
+        int[][][] dp = new int[n+1][2][3];
+       
+  
+       for(int i=n-1;i>=0;i--){
+        for(int k=1;k<3;k++){
+            int selltoday = prices[i] + dp[i+1][1][k-1];
+            int skip = 0 + dp[i+1][0][k];
+            dp[i][0][k]=Math.max(selltoday,skip);
+
+            int buytoday =  -prices[i] + dp[i+1][0][k];
+            int skiptoday = 0 + dp[i+1][1][k];
+            dp[i][1][k]=Math.max(buytoday,skiptoday);
         }
-
-        return f(0,1,prices,2);
-    }
-
-    int f(int i,int buy,int[] prices,int k){
-        if(i==prices.length || k==0)  return 0;
-
-        if(memo[i][buy][k] != -1) return memo[i][buy][k];
-
-        if(buy==1){
-            int buytoday =  -prices[i] + f(i+1,0,prices,k);
-            int skiptoday = 0 + f(i+1,1,prices,k);
-            return  memo[i][buy][k]=Math.max(buytoday,skiptoday);
-        }
-        else{
-            int selltoday = prices[i] + f(i+1,1,prices,k-1);
-            int skip = 0 + f(i+1,0,prices,k);
-            return  memo[i][buy][k]=Math.max(selltoday,skip);
-        }
+       }
+       return dp[0][1][2];
 
     }
 }
