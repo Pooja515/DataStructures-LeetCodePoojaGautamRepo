@@ -1,23 +1,28 @@
 class Solution {
-   
+    int[][] memo;
     public int maxProfit(int[] prices) {
         int n = prices.length;
-        int[] dp = new int [2];
-       
-        for(int i=n-1;i>=0;i--){
-            int[] cur = new int [2];
-            int selltoday = prices[i]+dp[1];
-            int notsell= 0+ dp[0];
-            cur[0] =Math.max(selltoday,notsell);
-
-            int buytoday = -prices[i]+dp[0];
-            int notbuy= 0+  dp[1];
-            cur[1]=Math.max(buytoday,notbuy);
-
-            dp=cur;
-
+        memo = new int[n][2];
+        for(int[] rows:memo){
+            Arrays.fill(rows,-1);
         }
+        return f(0,1,prices);
+    }
 
-     return dp[1];
+    int f(int i,int buy,int[] prices){
+        if(i == prices.length) return 0;
+
+        if(memo[i][buy] != -1) return memo[i][buy];
+
+        if(buy == 1){
+            int buytoday = -prices[i] + f(i+1,0,prices);
+            int skiptoday = 0 + f(i+1,1,prices);
+            return  memo[i][buy]=Math.max(buytoday , skiptoday);
+        }
+        else{
+             int selltoday = prices[i] + f(i+1,1,prices);
+            int skiptoday = 0 + f(i+1,0,prices);
+            return  memo[i][buy]=Math.max(selltoday , skiptoday);
+        }
     }
 }
