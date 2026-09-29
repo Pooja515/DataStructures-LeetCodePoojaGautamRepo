@@ -80,6 +80,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0209-minimum-size-subarray-sum](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0209-minimum-size-subarray-sum/) | Medium |
 | [0215-kth-largest-element-in-an-array](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0215-kth-largest-element-in-an-array/) | Medium |
 | [0217-contains-duplicate](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0217-contains-duplicate/) | Easy |
+| [0229-majority-element-ii](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0229-majority-element-ii/) | Medium |
 | [0238-product-of-array-except-self](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0238-product-of-array-except-self/) | Medium |
 | [0268-missing-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0268-missing-number/) | Easy |
 | [0283-move-zeroes](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0283-move-zeroes/) | Easy |
@@ -131,6 +132,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0127-word-ladder](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0127-word-ladder/) | Hard |
 | [0128-longest-consecutive-sequence](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0128-longest-consecutive-sequence/) | Medium |
 | [0217-contains-duplicate](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0217-contains-duplicate/) | Easy |
+| [0229-majority-element-ii](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0229-majority-element-ii/) | Medium |
 | [0242-valid-anagram](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0242-valid-anagram/) | Easy |
 | [0268-missing-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0268-missing-number/) | Easy |
 | [0424-longest-repeating-character-replacement](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0424-longest-repeating-character-replacement/) | Medium |
@@ -334,6 +336,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0088-merge-sorted-array](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0088-merge-sorted-array/) | Easy |
 | [0215-kth-largest-element-in-an-array](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0215-kth-largest-element-in-an-array/) | Medium |
 | [0217-contains-duplicate](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0217-contains-duplicate/) | Easy |
+| [0229-majority-element-ii](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0229-majority-element-ii/) | Medium |
 | [0242-valid-anagram](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0242-valid-anagram/) | Easy |
 | [0268-missing-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0268-missing-number/) | Easy |
 | [1547-minimum-cost-to-cut-a-stick](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/1547-minimum-cost-to-cut-a-stick/) | Hard |
@@ -523,4 +526,12 @@ Run the code locally using your preferred compiler or IDE.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0743-network-delay-time](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0743-network-delay-time/) | Medium |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0229-majority-element-ii](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0229-majority-element-ii/) | Medium |
+## Boyer–Moore Majority Vote Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0229-majority-element-ii](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0229-majority-element-ii/) | Medium |
 <!---LeetCode Topics End-->
