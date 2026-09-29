@@ -1,17 +1,18 @@
 class Solution {
-   
     public int maxProfit(int[] prices, int fee) {
-        int n = prices.length;
-         int[] cur = new int[2];
-         cur[0] =0;
-         cur[1] =0;
-       
-         for(int i=n-1;i>=0;i--){
-          
-            cur[0]= Math.max(prices[i] + cur[1] - fee ,cur[0]);
-            cur[1]= Math.max(-prices[i] + cur[0] ,cur[1]);
-    
-         }
-        return cur[1];
+       int n= prices.length;
+       int[][] dp =new int[n+1][2]; 
+       for(int i=n-1;i>=0;i--){
+        int selltoday = prices[i] + dp[i+1][1] -fee;
+        int skipsell = 0 + dp[i+1][0];
+        dp[i][0] = Math.max(selltoday,skipsell);
+
+        int buytoday = -prices[i] + dp[i+1][0];
+        int skipbuy = 0 + dp[i+1][1];
+        dp[i][1]=Math.max(buytoday,skipbuy);
+       }
+
+       return dp[0][1]; 
     }
 }
+
