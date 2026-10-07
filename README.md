@@ -565,6 +565,7 @@ Run the code locally using your preferred compiler or IDE.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0022-generate-parentheses/) | Medium |
+| [0077-combinations](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0077-combinations/) | Medium |
 | [0078-subsets](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0078-subsets/) | Medium |
 ## Bracket Sequences
 | Problem Name | Difficulty |
