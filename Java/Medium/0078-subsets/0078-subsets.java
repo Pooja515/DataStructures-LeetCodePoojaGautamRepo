@@ -1,23 +1,20 @@
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
+         List<List<Integer>> res = new ArrayList<>();
+         List<Integer> curr = new ArrayList<>();
 
-        List<List<Integer>> res = new ArrayList<>();//outer list
-        List<Integer> ans = new ArrayList<>();//inner list
+         f(0,nums,res,curr);
 
-        f(0, nums, ans, res);
-
-        return res;
+         return res;
+        
     }
 
-    void f(int start, int[] nums, List<Integer> ans, List<List<Integer>> res) {
-        res.add(new ArrayList<>(ans));
-        for (int i = start; i < nums.length; i++) {
-            //take
-            ans.add(nums[i]);
-            f(i + 1, nums, ans, res);
-            //nottake i.e backtrack
-            ans.remove(ans.size() - 1);
+    void f(int start,int[] nums, List<List<Integer>> res, List<Integer> curr){
+        res.add(new ArrayList<>(curr));
+        for(int i=start;i<nums.length;i++){
+            curr.add(nums[i]);
+            f(i+1,nums,res,curr);
+            curr.remove(curr.size()-1);
         }
-
     }
 }
