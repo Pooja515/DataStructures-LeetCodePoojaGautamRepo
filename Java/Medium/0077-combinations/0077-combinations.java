@@ -10,6 +10,7 @@ class Solution {
     }
 
     void f(int start,int n,int k , List<List<Integer>>res, List<Integer> cur){
+        
         if(cur.size() == k){
             res.add(new ArrayList<>(cur));
             return;
