@@ -1,47 +1,44 @@
 class Solution {
     public List<Integer> eventualSafeNodes(int[][] graph) {
         int n = graph.length;
-        List<List<Integer>> adj = new ArrayList<>();
-        int[] outDegree = new int[n];
-
-        for (int i = 0; i < n; i++) {
-            adj.add(new ArrayList<>());
-        }
-
-        //Nested loop + build REVERSE graph
-        for (int u = 0; u < n; u++) {
-            for (int v : graph[u]) {
-                adj.get(v).add(u);     // reverse edge: v -> u
-            }
-            outDegree[u] = graph[u].length;  // outdegree from ORIGINAL graph
-        }
-
-        Queue<Integer> queue = new LinkedList<>();
-        boolean[] safe = new boolean[n];
-
-        for (int i = 0; i < n; i++) {
-            if (outDegree[i] == 0) {
-                queue.offer(i);
-            }
-        }
-
-        while (!queue.isEmpty()) {
-            int node = queue.poll();
-            safe[node] = true;
-
-            for (int neighbour : adj.get(node)) {  // predecessors now
-                outDegree[neighbour]--;
-                if (outDegree[neighbour] == 0) {
-                    queue.offer(neighbour);
-                }
-            }
-        }
-
+        int[] state = new int[n];
         List<Integer> result = new ArrayList<>();
+
+        // 0 = unvisited, 1 = visiting, 2 = safe, 3 = unsafe
+
         for (int i = 0; i < n; i++) {
-            if (safe[i]) result.add(i);
+            if (dfs(i, graph, state)) {
+                result.add(i);
+            }
         }
 
+        // Nodes are checked in increasing order, so result is sorted.
         return result;
+    }
+
+    private boolean dfs(int node, int[][] graph, int[] state) {
+        if (state[node] == 1) {
+            return false; // Cycle detected
+        }
+
+        if (state[node] == 2) {
+            return true; // Already known to be safe
+        }
+
+        if (state[node] == 3) {
+            return false; // Already known to be unsafe
+        }
+
+        state[node] = 1; // Mark as visiting
+
+        for (int neighbor : graph[node]) {
+            if (!dfs(neighbor, graph, state)) {
+                state[node] = 3; // One unsafe path makes node unsafe
+                return false;
+            }
+        }
+
+        state[node] = 2; // All paths lead to safe nodes
+        return true;
     }
 }
