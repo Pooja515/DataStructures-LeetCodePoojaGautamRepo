@@ -3,23 +3,27 @@ class Solution {
     public int minCostClimbingStairs(int[] cost) {
         int n = cost.length;
 
-        if (n < 2)
-            return Math.min(cost[0], cost[1]);
+        int[] memo = new int[n + 1];
 
-      
-        int prev2 = cost[0];
-        int prev1 = cost[1] ;
+        Arrays.fill(memo, -1);
 
-        for (int i = 2; i < n; i++) {
-          
-
-            int cur =cost[i]+ Math.min(prev1, prev2);
-            prev2 = prev1;
-            prev1 = cur;
-
-        }
-        return Math.min(prev2,prev1);
-
+        return f(n, cost, memo);
     }
 
+    int f(int ind, int[] cost, int[] memo) {
+
+        if (ind <= 1)
+            return 0;
+
+        if (memo[ind] != -1)
+            return memo[ind];
+
+        int climb1 = f(ind - 1, cost, memo) + cost[ind - 1];
+        int climb2 = Integer.MAX_VALUE;
+        if (ind > 1) {
+            climb2 = f(ind - 2, cost, memo) + cost[ind - 2];
+        }
+
+        return memo[ind] = Math.min(climb1, climb2);
+    }
 }
