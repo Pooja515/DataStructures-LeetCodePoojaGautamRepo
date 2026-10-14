@@ -3,21 +3,20 @@ class Solution {
     public int minCostClimbingStairs(int[] cost) {
         int n = cost.length;
 
-        if(n<2) return Math.min(cost[0],cost[1]);
+        if (n < 2)
+            return Math.min(cost[0], cost[1]);
 
-        int[] dp = new int[n+1];
-        dp[0] = 0;
-        dp[1] = 0;
+        int prev2 = cost[0] ,prev1 = cost[1];
 
-        for(int ind=2;ind<=n;ind++){
-           int climb1 = dp[ind - 1]+ cost[ind - 1];
-           int climb2 = dp[ind - 2] + cost[ind - 2];
-    
-           dp[ind] = Math.min(climb1, climb2);
+        for (int ind = 2; ind < n; ind++) {
+
+            int cur = cost[ind] + Math.min(prev1, prev2);
+            prev2 = prev1;
+            prev1 = cur;
 
         }
 
-        return dp[n];
-        
+        return Math.min(prev1,prev2);
+
     }
 }
