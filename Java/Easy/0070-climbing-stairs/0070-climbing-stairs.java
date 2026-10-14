@@ -1,29 +1,12 @@
 class Solution {
-   
     public int climbStairs(int n) {
+       int[] dp = new int[n+1];
+       dp[0] =1;
+       dp[1] =1;
 
-        // BASE CASE TO STEP O STAIRS THERE IS 1 WAY AND 1 STEP THERE IS 1 WAY 
-
-        if(n<=1) return 1;
-        int[] memo= new int[n];
-        Arrays.fill(memo,-1);
-
-        // RETURN COUNT OF ALL DISTINCT WAYS TO REACH N STAIRS 
-        
-        return  climb(n-1,memo) +  climb(n-2,memo);
-    }
-
-    int climb(int i,int[] memo){
-        if(i<=1) return 1;
-
-        if(memo[i] != -1) return memo[i];
-
-        return memo[i] = climb(i-1,memo) +climb(i-2,memo);
+       for(int i=2;i<=n;i++){
+           dp[i] = dp[i-1] + dp[i-2];
+       } 
+       return dp[n];
     }
 }
-
-/*
-T.C : O(2^N)  // TWO CHOICES WE HAVE 1 STEP OR TWO STEPS FUNCTION CALL                       
-S.C : O(N) // RECURSIVE CALL STACK DEPTH     
-
-**/
