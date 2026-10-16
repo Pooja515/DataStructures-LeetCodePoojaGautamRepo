@@ -1,17 +1,18 @@
 class Solution {
     public int[][] merge(int[][] intervals) {
-        Arrays.sort(intervals,(a,b)->a[0]-b[0]);
-        List<int[]> res = new ArrayList<>();
+        Arrays.sort(intervals,(a,b)->Integer.compare(a[0],b[0]));
+
+        List<int[]> ans = new ArrayList<>();
 
         for(int[] interval:intervals){
-            if(res.isEmpty() || interval[0]>res.get(res.size()-1)[1]){
-                res.add(interval);
+            if(ans.isEmpty() || ans.get(ans.size()-1)[1] < interval[0]){
+                ans.add(interval);
             }
             else{
-                int[] last = res.get(res.size()-1);
+                int[] last = ans.get(ans.size()-1);
                 last[1] = Math.max(last[1],interval[1]);
             }
         }
-        return res.toArray(new int[res.size()][]);
+        return ans.toArray(new int[ans.size()][]);
     }
 }
