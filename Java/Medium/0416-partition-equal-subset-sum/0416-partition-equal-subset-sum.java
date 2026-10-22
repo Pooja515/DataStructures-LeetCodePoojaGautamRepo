@@ -10,33 +10,28 @@ class Solution {
             return false;
         int target = sum / 2;
 
-        int[][] memo = new int[n][target + 1];
-        for (int[] rows : memo) {
-            Arrays.fill(rows, -1);
+        boolean[][] dp = new boolean[n][target + 1];
+
+        for (int i = 0; i < n; i++) {
+            dp[i][0] = true;
         }
 
-        return f(n - 1, target, nums, memo);
-    }
-
-    boolean f(int i, int target, int[] nums, int[][] memo) {
-        if (target == 0)
-            return true;
-
-        if (i == 0)
-            return nums[0] == target;
-
-        if (memo[i][target] != -1)
-            return memo[i][target] == 1;
-
-        boolean nottake = f(i - 1, target, nums, memo);
-        boolean take = false;
-        if (nums[i] <= target) {
-            take = f(i - 1, target - nums[i], nums, memo);
+        if (nums[0] <= target) {
+            dp[0][nums[0]] = true;
         }
 
-        memo[i][target] = take || nottake ? 1 : 0;
+        for (int i = 1; i < n; i++) {
+            for (int t = 0; t <= target; t++) {
+                boolean nottake = dp[i - 1][t];
+                boolean take = false;
+                if (nums[i] <= t) {
+                    take = dp[i - 1][t - nums[i]];
+                }
 
-        return take || nottake;
+                dp[i][t] = take || nottake;
+            }
+        }
+        return dp[n - 1][target];
 
     }
 }
