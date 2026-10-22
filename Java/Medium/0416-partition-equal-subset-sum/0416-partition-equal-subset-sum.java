@@ -10,28 +10,32 @@ class Solution {
             return false;
         int target = sum / 2;
 
-        boolean[][] dp = new boolean[n][target + 1];
+        boolean[] dp = new boolean [target + 1];
 
         for (int i = 0; i < n; i++) {
-            dp[i][0] = true;
+            dp[0] = true;
         }
 
         if (nums[0] <= target) {
-            dp[0][nums[0]] = true;
+            dp[nums[0]] = true;
         }
 
         for (int i = 1; i < n; i++) {
-            for (int t = 0; t <= target; t++) {
-                boolean nottake = dp[i - 1][t];
+             boolean[] cur = new boolean [target + 1];
+             cur[0] = true;
+             for (int t = 0; t <= target; t++) {
+
+                boolean nottake = dp[t];
                 boolean take = false;
                 if (nums[i] <= t) {
-                    take = dp[i - 1][t - nums[i]];
+                    take = dp[t - nums[i]];
                 }
 
-                dp[i][t] = take || nottake;
+                cur[t] = take || nottake;
             }
+            dp=cur;
         }
-        return dp[n - 1][target];
+        return dp[target];
 
     }
 }
