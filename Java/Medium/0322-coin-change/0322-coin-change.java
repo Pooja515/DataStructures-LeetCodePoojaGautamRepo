@@ -13,7 +13,7 @@ class Solution {
        
         for(int i=1;i<n;i++){
              int[] cur = new int [amount+1];
-             cur[0] =0;
+            // cur[0] =0;
             for(int t=0;t<=amount;t++){
                 int take = (int) 1e9;
                 if (coins[i] <= t) {
