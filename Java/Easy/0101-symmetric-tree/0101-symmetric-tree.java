@@ -17,20 +17,18 @@ class Solution {
     public boolean isSymmetric(TreeNode root) {
         if(root == null) return true;
 
-        return ismirror(root.left,root.right);
+        return ismirror(root.left ,root.right);
+        
     }
 
     boolean ismirror(TreeNode p , TreeNode q){
+        if(p== null && q==null) return true;
+        if(p==null|| q == null) return false;
 
-        if(p== null && q == null ) return true;
-        if(p==null && q!=null || p!=null && q==null) return false;
-
-        if(p != null && q != null) {
+        if(p != null && q != null){
             if(p.val != q.val) return false;
-
         }
 
-        return ismirror(p.left,q.right) &&  ismirror(p.right,q.left);
-        
+        return ismirror(p.left , q.right) && ismirror(p.right , q.left);
     }
 }
