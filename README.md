@@ -149,6 +149,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0076-minimum-window-substring](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0076-minimum-window-substring/) | Hard |
 | [0127-word-ladder](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0127-word-ladder/) | Hard |
 | [0128-longest-consecutive-sequence](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0128-longest-consecutive-sequence/) | Medium |
+| [0141-linked-list-cycle](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0141-linked-list-cycle/) | Easy |
 | [0217-contains-duplicate](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0217-contains-duplicate/) | Easy |
 | [0229-majority-element-ii](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0229-majority-element-ii/) | Medium |
 | [0242-valid-anagram](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0242-valid-anagram/) | Easy |
@@ -459,6 +460,7 @@ Run the code locally using your preferred compiler or IDE.
 | [0042-trapping-rain-water](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Hard/0042-trapping-rain-water/) | Hard |
 | [0088-merge-sorted-array](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0088-merge-sorted-array/) | Easy |
 | [0125-valid-palindrome](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0125-valid-palindrome/) | Easy |
+| [0141-linked-list-cycle](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0141-linked-list-cycle/) | Easy |
 | [0189-rotate-array](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0189-rotate-array/) | Medium |
 | [0283-move-zeroes](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0283-move-zeroes/) | Easy |
 | [0287-find-the-duplicate-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0287-find-the-duplicate-number/) | Medium |
@@ -600,6 +602,7 @@ Run the code locally using your preferred compiler or IDE.
 ## Floyd's Cycle Finding Algorithm
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0141-linked-list-cycle](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0141-linked-list-cycle/) | Easy |
 | [0287-find-the-duplicate-number](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0287-find-the-duplicate-number/) | Medium |
 ## Quickselect
 | Problem Name | Difficulty |
@@ -655,4 +658,5 @@ Run the code locally using your preferred compiler or IDE.
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Medium/0019-remove-nth-node-from-end-of-list/) | Medium |
 | [0021-merge-two-sorted-lists](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0021-merge-two-sorted-lists/) | Easy |
 | [0083-remove-duplicates-from-sorted-list](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0083-remove-duplicates-from-sorted-list/) | Easy |
+| [0141-linked-list-cycle](https://github.com/Pooja515/DataStructures-LeetCodePoojaGautamRepo/tree/main/Java/Easy/0141-linked-list-cycle/) | Easy |
 <!---LeetCode Topics End-->
