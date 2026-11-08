@@ -16,14 +16,14 @@ class Solution {
             }
 
             String key = str.toString();
-/** 
-            if(map.containsKey(key)){
-                map.get(key).add(s);
+
+            if(!map.containsKey(key)){
+                 map.put(key,new ArrayList<>());
             }
-            map.put(key,new ArrayList<>());
-            */
-             map.putIfAbsent(key,new ArrayList<>());
             map.get(key).add(s);
+        
+            // map.putIfAbsent(key,new ArrayList<>());
+          //  map.get(key).add(s);
         }  
 
         return new ArrayList<>(map.values());
