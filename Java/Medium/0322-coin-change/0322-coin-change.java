@@ -1,31 +1,34 @@
 class Solution {
-   
+    int[][] memo;
     public int coinChange(int[] coins, int amount) {
-        int n = coins.length;
-        int[] dp = new int [amount+1];
+       int n = coins.length;
+       memo = new int[n][amount+1];
+       for(int[] rows: memo){
+           Arrays.fill(rows,-1);
+       }
 
-        for(int i=0;i<=amount;i++){
-          if (i % coins[0] ==0) {
-                dp[i] = i / coins[0];
-            } else
-                 dp[i] = (int) 1e9;
-        }
-       
-        for(int i=1;i<n;i++){
-             int[] cur = new int [amount+1];
-             cur[0]=0;
-            for(int t=0;t<=amount;t++){
-                int take = (int) 1e9;
-                if (coins[i] <= t) {
-                   take = 1 + cur[t - coins[i]];
-                }
-                int nottake = 0 + dp[t];
-
-                cur[t] = Math.min(take, nottake);
+       return f(n-1,amount,coins) >= (int) 1e9 ? -1:f(n-1,amount,coins);
+    }
+    int f(int i , int amount ,int[] coins){
+        if(i==0){
+            if(amount % coins[i] == 0){
+                return amount/coins[i];
             }
-            dp=cur;
+            else{
+                return (int) 1e9;
+            }
         }
 
-        return dp[amount] >= (int) 1e9 ? -1:dp[amount];
+        if(memo[i][amount] != -1){
+            return memo[i][amount];
+        }
+
+        int nottake = f(i-1,amount ,coins);
+        int take = (int) 1e9;
+        if(coins[i] <= amount){
+            take = 1 + f(i,amount - coins[i],coins);
+        }
+
+        return memo[i][amount] = Math.min(take,nottake);
     }
 }
