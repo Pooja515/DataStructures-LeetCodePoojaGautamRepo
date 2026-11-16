@@ -1,28 +1,26 @@
 class Solution {
-    int[][] memo;
+
     public int lengthOfLIS(int[] nums) {
-        if(nums == null) return 0;
+        if (nums == null)
+            return 0;
         int n = nums.length;
 
-        memo = new int[n][n+1];
-        for(int[] rows : memo){
-            Arrays.fill(rows,-1);
+        int[][] dp = new int[n + 1][n + 1];
+        for (int ind = n - 1; ind >= 0; ind--) {
+
+            for (int prev_ind = ind - 1; prev_ind >= -1; prev_ind--) {
+
+                int nottake = dp[ind + 1][prev_ind + 1];
+
+                int take = 0;
+
+                if (prev_ind == -1 || nums[ind] > nums[prev_ind]) {
+                    take = 1 + dp[ind + 1][ind + 1];
+                }
+
+                dp[ind][prev_ind + 1] = Math.max(take, nottake);
+            }
         }
-
-        return f(0,-1,nums);
-    }
-
-    int f(int ind , int prev_ind,int[] nums){
-        if(ind == nums.length) return 0;
-
-        if(memo[ind][prev_ind +1] != -1) return memo[ind][prev_ind+1];
-
-        int nottake = 0+ f(ind+1,prev_ind,nums);
-        int take =0;
-        if(prev_ind == -1 || nums[ind] > nums[prev_ind]){
-            take = 1 + f(ind+1,ind,nums);
-        }
-
-        return memo[ind][prev_ind+1] = Math.max(take ,nottake);
+       return dp[0][0];
     }
 }
