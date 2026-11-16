@@ -1,46 +1,54 @@
 class Solution {
     public void setZeroes(int[][] matrix) {
-        int m= matrix.length, n= matrix[0].length;
+        int m = matrix.length , n = matrix[0].length;
 
-        boolean rowflag= false , colflag =false;
-
-        for(int r=0;r<m;r++){
-            if(matrix[r][0] == 0 ) {
-                colflag =true;
-                break;
+        boolean rowflag = false , colflag = false;
+        //explore row 
+        for(int i=0;i<m;i++){
+            if(matrix[i][0] == 0){
+               colflag = true;
+               break;
             }
         }
-        for(int c=0;c<n;c++){
-            if(matrix[0][c] == 0) {
-                rowflag =true;
-                break;
+
+        // explore col
+         for(int i=0;i<n;i++){
+            if(matrix[0][i] == 0){
+               rowflag = true;
+               break;
             }
+           
         }
-        for(int r=1;r<m;r++){
-            for(int c=1;c<n;c++){
-                if(matrix[r][c] == 0){
-                    matrix[0][c] = 0;
-                    matrix[r][0] = 0;
+
+        for(int i=1;i<m;i++){
+            for(int j=1;j<n;j++){
+                if(matrix[i][j] == 0){
+                     matrix[0][j] = 0;
+                     matrix[i][0] = 0;
                 }
+
             }
         }
 
-        for(int r=1;r<m;r++){
-            for(int c=1;c<n;c++){
-                if(matrix[0][c] ==0 || matrix[r][0] ==0){
-                    matrix[r][c] =0;
+         for(int i=1;i<m;i++){
+            for(int j=1;j<n;j++){
+                if(matrix[0][j] == 0 || matrix[i][0] == 0){
+                     matrix[i][j] = 0;
+                
                 }
+
             }
         }
 
         if(rowflag){
-            for(int c=0;c<n;c++){
-                matrix[0][c] =0;
+            for(int i=0;i<n;i++){
+                matrix[0][i]=0;
             }
         }
-         if(colflag){
-            for(int r=0;r<m;r++){
-                matrix[r][0] =0;
+
+        if(colflag){
+            for(int i=0;i<m;i++){
+                matrix[i][0]=0;
             }
         }
     }
